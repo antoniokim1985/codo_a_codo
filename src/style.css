@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+
+/*-----------------------------------*/
+/* generales-------------------------*/
+
+body{
+    border: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: whitesmoke;
+
+}
+main{
+
+    width: 100%;
+
+}
+
+h2{
+    padding:1% 0%;
+    margin: 0px;
+    display: block;
+    margin-bottom: 1%;
+    
+}
+
+img{
+    margin: 0px 0px;
+}
+
+.caja{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+}
+
+
+
+.marc{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 100%;
+    }
+.marc2{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid gray;
+
+    }
+.marc3{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid gray;
+}
+
+/*-------------------------------*/
+/*header-------------------------*/
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: white;
+    margin: 0 ;
+    border-bottom: gray 1px solid;
+    position:sticky;
+    top: 0%;
+
+}
+
+#merch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 5%;
+
+
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    transition: all 1s linear;
+
+}
+
+nav ul li:hover{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.274);
+    
+}
+
+#motivos{
+    margin: 0px 0px 30px 0px;
+}
+
+
+
+/*footer-------------------------*/            
+footer{
+    bottom: 0;
+    padding-top: 2%;
+    background-color: rgb(31, 29, 29) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+
+    
+}
+
+.red{
+    margin: 2px;
+}
+
+
+footer p{
+    font-size: x-small;
+    margin-left: 40px;
+    color: white;
+    font-size: small;
+}
+
+
+/*--------------------------------*/
+/*recetas y eventos---------------*/
+.recetas{
+    background-color: tomato;
+    padding: 1.5% 2% ;
+    color: white;
+    width: 100%;
+}
+
+.eventos{
+    background-color:orchid;
+    padding: 1.5% 2%;
+    color: white;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+/*formulario-------------------------*/
+
+
+form{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+#email{
+    padding: 10px;
+
+}
+
+#name{
+    padding: 10px;
+
+}
+
+#submit{
+    padding: 10px;
+
+}
+
+#msg{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/*locacion-------------------------*/
+
+.direccion, .content{
+    margin-left: 1%;
+}
+.direccion p{
+    font-size: medium;
+    margin-top: 5%;
+    
+}
+iframe{
+    width: 100%;
+    border:0;
+}
+
+/*-----------------------------------*/
+/*responsive-------------------------*/
+/*-----------------------------------*/
+
+@media screen and (min-width:200px) {
+
+body{
+    font-size: small;
+}
+
+.marc2{
+
+    width: 90%;
+    padding: 2%
+}
+.marc3{
+
+    width: 90%;
+    padding: 2%
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 ;
+    border-bottom: gray 1px solid;
+    position:sticky;
+    top: 0%;
+
+}
+nav{
+    display: flex;
+    margin-right: 0%;
+    padding: 0%;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li{
+    list-style-type:none;
+    padding: 2%;
+}
+nav ul li a{
+    list-style-type:none;
+    padding: 0;
+    font-size: small;
+}
+
+
+#merch{
+    padding: 0;
+    margin: 0;
+}
+
+iframe{
+    height: 300px;
+}
+}
+
+@media screen and (min-width:764px) {
+    body{
+        font-size: medium;
+    }
+
+    .marc2{
+
+    width: 40%;
+    padding: 2%
+    }
+    .marc3{
+
+    width: 90%;
+    padding: 2%
+
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: 0 ;
+        border-bottom: gray 1px solid;
+        position:sticky;
+        top: 0%;
+
+    }
+    nav{
+        display: flex;
+        margin-right: 0%;
+        padding: 0%;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    nav ul li{
+        list-style-type:none;
+        padding: 2%;
+    }
+    nav ul li a{
+        list-style-type:none;
+        padding: 0;
+        font-size: small;
+    }
+
+
+    #merch{
+        padding: 0;
+        margin: 0;
+    }
+
+    #merch{
+        padding: 0;
+        margin: 0;
+    }
+
+    iframe{
+        height: 500px;
+    }
+    nav ul li a{
+        font-size: medium;
+    }
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+    body{
+        font-size: large;
+    }
+
+.marc2{
+
+    width:31%;
+    padding: 0.5%;
+
+}
+.marc3{
+
+    width: 45%;
+    padding: 0.5%;
+    margin: 2%;
+
+
+    }
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: white;
+    margin: 0 ;
+    border-bottom: gray 1px solid;
+    position:sticky;
+    top: 0%;
+
+}
+nav{
+    display: flex;
+    margin-right: 5%;
+    padding: 1.5%;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+nav ul li{
+    list-style-type:none;
+    padding: 2.5%;
+}
+nav ul li a{
+    font-size: large;
+}
+
+iframe{
+    height: 800px;
+}
+}
