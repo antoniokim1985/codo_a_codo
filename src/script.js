@@ -31,3 +31,31 @@ window.onload = function() {
  };
 
 
+//validación de formulario
+
+boton= document.getElementById("submit")
+var regex=/^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$/;
+
+boton.addEventListener("click", ()=>{
+
+    nombre = document.getElementById("name").value;
+    email = document.getElementById("email").value;
+    msg = document.getElementById("msg").value;
+
+
+    if(nombre.length == 0) {
+        alert("El campo nombre no puede contener valores nulos")
+    }
+    
+    if( msg.length==0 || msg.length >= 1000) {
+        alert("El mensaje contiene número de caracteres no admisibles, recuerde que se aceptan desde 0 a 1000 caracteres");
+        
+    }
+
+    if( email.length == 0||regex.test(email)==false) {        
+        alert("El formato del correo no es un valor aceptado");
+    } 
+
+});
+
+
