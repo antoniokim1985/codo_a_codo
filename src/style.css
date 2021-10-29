@@ -88,19 +88,21 @@ header{
 }
 
 
-nav ul li a{
+
+nav ul li a:link, nav ul li a:visited{
     text-decoration: none;
     color: black;
     font-size: large;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 
 }
 
-nav ul li:hover{
+nav ul li a:hover{
     text-decoration: none;
     color: white;
     font-size: large;
     background-color: rgba(0, 0, 0, 0.274);
+
     
 }
 
